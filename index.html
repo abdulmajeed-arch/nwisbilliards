@@ -48,19 +48,31 @@
         }
 
         nav {
-            height: var(--nav-height);
+            height: auto;
+            min-height: var(--nav-height);
             display: flex; justify-content: space-between; align-items: center;
-            padding: 0 4%;
+            padding: 10px 4%;
             background: rgba(var(--bg-dark), 0.5);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--glass-border);
             position: fixed; top: 0; width: 100%; z-index: 1000;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         .brand { font-family: 'Lexend Deca', sans-serif; font-weight: 900; font-size: 1.4rem; letter-spacing: -1px; }
         .brand span { background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-        .nav-links { display: flex; gap: 4px; background: var(--glass); padding: 6px; border-radius: 20px; border: 1px solid var(--glass-border); }
+        .nav-links { 
+            display: flex; 
+            gap: 4px; 
+            background: var(--glass); 
+            padding: 6px; 
+            border-radius: 20px; 
+            border: 1px solid var(--glass-border);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         .nav-btn {
             background: transparent; border: none; color: var(--text-dim);
             padding: 8px 12px; cursor: pointer; font-weight: 600; font-size: 0.75rem; border-radius: 14px;
@@ -74,7 +86,7 @@
         }
 
         .view-container {
-            margin-top: var(--nav-height);
+            margin-top: 100px;
             min-height: calc(100vh - var(--nav-height));
             padding: 40px 4%;
         }
@@ -154,9 +166,10 @@
         }
 
         @media (max-width: 900px) {
-            .nav-links { display: none; }
+            nav { justify-content: center; }
             .bento-grid { grid-template-columns: 1fr; }
             .large { grid-column: span 1; }
+            .nav-links { order: 3; width: 100%; }
         }
     </style>
 </head>
@@ -359,14 +372,14 @@
         <div id="groups" class="view">
             <h2 style="font-family:'Lexend Deca'; font-size: 2.5rem; margin-bottom: 20px;">Group <span>Standings</span></h2>
             <div class="groups-grid">
-                <div class="group-card"><h3>Group A</h3><table class="group-table"><tr><th>Player</th><th>P</th><th>W</th><th>L</th></tr><tr><td>M. Rayyan</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Hamza</td><td>0</td><td>0</td><td>0</td></tr><tr><td>A. Bechara</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Abdelbagi E.</td><td>0</td><td>0</td><td>0</td></tr></table></div>
-                <div class="group-card"><h3>Group B</h3><table class="group-table"><tr><th>Player</th><th>P</th><th>W</th><th>L</th></tr><tr><td>M. Moaathasim</td><td>0</td><td>0</td><td>0</td></tr><tr><td>A. Armaghan</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Hassan I.</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Ibrahim A.</td><td>0</td><td>0</td><td>0</td></tr></table></div>
-                <div class="group-card"><h3>Group C</h3><table class="group-table"><tr><th>Player</th><th>P</th><th>W</th><th>L</th></tr><tr><td>M. Yahya</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Farukh S.</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Adam H.</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Qamar N.</td><td>0</td><td>0</td><td>0</td></tr></table></div>
-                <div class="group-card"><h3>Group D</h3><table class="group-table"><tr><th>Player</th><th>P</th><th>W</th><th>L</th></tr><tr><td>Saif Yazan</td><td>0</td><td>0</td><td>0</td></tr><tr><td>A. Zubair</td><td>0</td><td>0</td><td>0</td></tr><tr><td>D. Cherian</td><td>0</td><td>0</td><td>0</td></tr><tr><td>A. Tabiyyeh</td><td>0</td><td>0</td><td>0</td></tr></table></div>
-                <div class="group-card"><h3>Group E</h3><table class="group-table"><tr><th>Player</th><th>P</th><th>W</th><th>L</th></tr><tr><td>Karam Awad</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Modasser</td><td>0</td><td>0</td><td>0</td></tr><tr><td>M. Luqman</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Ali Al-Bachari</td><td>0</td><td>0</td><td>0</td></tr></table></div>
-                <div class="group-card"><h3>Group F</h3><table class="group-table"><tr><th>Player</th><th>P</th><th>W</th><th>L</th></tr><tr><td>Basel M.</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Hasnain M.</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Rayyan Adil</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Ramez A.</td><td>0</td><td>0</td><td>0</td></tr></table></div>
-                <div class="group-card"><h3>Group G</h3><table class="group-table"><tr><th>Player</th><th>P</th><th>W</th><th>L</th></tr><tr><td>Moath B.</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Abdulmajeed</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Yazan H.</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Hazem E.</td><td>0</td><td>0</td><td>0</td></tr></table></div>
-                <div class="group-card"><h3>Group H</h3><table class="group-table"><tr><th>Player</th><th>P</th><th>W</th><th>L</th></tr><tr><td>Mujtaba U.</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Anas M.</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Tamim M.</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Bilal Amir</td><td>0</td><td>0</td><td>0</td></tr></table></div>
+                <div class="group-card"><h3>Group A</h3><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>W</th><th>L</th><th>PTS</th></tr></thead><tr><td>1</td><td>M. Rayyan</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>2</td><td>Hamza</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>3</td><td>A. Bechara</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>4</td><td>Abdelbagi E.</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></table></div>
+                <div class="group-card"><h3>Group B</h3><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>W</th><th>L</th><th>PTS</th></tr></thead><tr><td>1</td><td>M. Moaathasim</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>2</td><td>A. Armaghan</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>3</td><td>Hassan I.</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>4</td><td>Ibrahim A.</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></table></div>
+                <div class="group-card"><h3>Group C</h3><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>W</th><th>L</th><th>PTS</th></tr></thead><tr><td>1</td><td>M. Yahya</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>2</td><td>Farukh S.</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>3</td><td>Adam H.</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>4</td><td>Qamar N.</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></table></div>
+                <div class="group-card"><h3>Group D</h3><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>W</th><th>L</th><th>PTS</th></tr></thead><tr><td>1</td><td>Saif Yazan</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>2</td><td>A. Zubair</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>3</td><td>D. Cherian</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>4</td><td>A. Tabiyyeh</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></table></div>
+                <div class="group-card"><h3>Group E</h3><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>W</th><th>L</th><th>PTS</th></tr></thead><tr><td>1</td><td>Karam Awad</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>2</td><td>Modasser</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>3</td><td>M. Luqman</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>4</td><td>Ali Al-Bachari</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></table></div>
+                <div class="group-card"><h3>Group F</h3><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>W</th><th>L</th><th>PTS</th></tr></thead><tr><td>1</td><td>Basel M.</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>2</td><td>Hasnain M.</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>3</td><td>Rayyan Adil</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>4</td><td>Ramez A.</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></table></div>
+                <div class="group-card"><h3>Group G</h3><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>W</th><th>L</th><th>PTS</th></tr></thead><tr><td>1</td><td>Moath B.</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>2</td><td>Abdulmajeed</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>3</td><td>Yazan H.</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>4</td><td>Hazem E.</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></table></div>
+                <div class="group-card"><h3>Group H</h3><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>W</th><th>L</th><th>PTS</th></tr></thead><tr><td>1</td><td>Mujtaba U.</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>2</td><td>Anas M.</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>3</td><td>Tamim M.</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>4</td><td>Bilal Amir</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></table></div>
             </div>
 
             <h2 style="font-family:'Lexend Deca'; font-size: 2.5rem; margin: 60px 0 20px;">Knockout <span>Phase</span></h2>
