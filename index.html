@@ -118,33 +118,6 @@
         .news-item:last-child { border: none; }
         .news-tag { background: var(--accent); color: white; padding: 2px 8px; border-radius: 6px; font-size: 0.7rem; font-weight: 800; }
 
-        .qualified-box {
-            background: var(--glass);
-            border: 2px solid var(--accent);
-            border-radius: 30px;
-            padding: 30px;
-            margin: 40px 0;
-            text-align: left;
-        }
-        .qualified-box h2 { font-family: 'Lexend Deca'; margin-bottom: 20px; font-size: 1.5rem; }
-        .qualified-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 15px;
-        }
-        .q-player {
-            background: rgba(255,255,255,0.05);
-            padding: 15px;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            border: 1px solid var(--glass-border);
-        }
-        .q-player img { width: 45px; height: 45px; border-radius: 12px; object-fit: cover; }
-        .q-info h4 { font-size: 0.8rem; font-weight: 800; }
-        .q-info p { font-size: 0.65rem; color: var(--accent); font-weight: 700; margin: 0; }
-
         .cta-btn {
             padding: 16px 32px; border-radius: 100px; background: var(--accent-gradient);
             color: white; text-decoration: none; font-weight: 800; font-size: 0.9rem;
@@ -233,8 +206,7 @@
             <button class="nav-btn" onclick="showView(event, 'how')">How To Play</button>
             <button class="nav-btn" onclick="showView(event, 'roster')">Players</button>
             <button class="nav-btn" onclick="showView(event, 'matchups')">Matchups</button>
-            <button class="nav-btn" onclick="showView(event, 'groups')">Groups</button>
-            <button class="nav-btn" onclick="showView(event, 'gallery')">Media</button>
+            <button class="nav-btn" onclick="showView(event, 'groups')">Previous Matchups</button>
         </div>
         <div class="mode-switch" onclick="toggleMode()">
             <i class="fas fa-moon" id="theme-icon"></i>
@@ -251,86 +223,12 @@
                 <div class="news-ticker">
                     <h3><i class="fas fa-bullhorn"></i> LATEST NEWS</h3>
                     <div class="news-item">
-                        <span>Group E: Ali Al-Bachari secures a victory over Modasser.</span>
-                        <span class="news-tag">RESULT</span>
+                        <span>The Round of 16 has officially begun! Check the Matchups tab for fixtures.</span>
+                        <span class="news-tag">URGENT</span>
                     </div>
                     <div class="news-item">
-                        <span>Group F: Rayyan Adil defeats Basel; Basel secures win over Hasnain.</span>
-                        <span class="news-tag">UPDATE</span>
-                    </div>
-                    <div class="news-item">
-                        <span>Roster Update: Saif Yazan has officially withdrawn from Group D.</span>
-                        <span class="news-tag">TOURNAMENT</span>
-                    </div>
-                </div>
-
-                <div class="qualified-box">
-                    <h2><i class="fas fa-trophy" style="color: gold;"></i> Qualified for Round of 16</h2>
-                    <div class="qualified-grid">
-                        <div class="q-player">
-                            <img src="https://iili.io/qsJDyBf.th.png">
-                            <div class="q-info"><h4>Ibrahim Abid</h4><p>G10 • SEC B</p></div>
-                        </div>
-                        <div class="q-player">
-                            <img src="https://iili.io/B9EZRf9.md.png">
-                            <div class="q-info"><h4>M. Moaathasim</h4><p>G9 • SEC D</p></div>
-                        </div>
-                        <div class="q-player">
-                            <img src="https://iili.io/qs9uITu.png">
-                            <div class="q-info"><h4>M. Yahya</h4><p>G9 • SEC D</p></div>
-                        </div>
-                        <div class="q-player">
-                            <img src="https://iili.io/qsJzJhG.md.png">
-                            <div class="q-info"><h4>Qamar N.</h4><p>G12 • SEC A</p></div>
-                        </div>
-                        <div class="q-player">
-                            <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png">
-                            <div class="q-info"><h4>M. Luqman</h4><p>G11 • SEC C</p></div>
-                        </div>
-                        <div class="q-player">
-                            <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png">
-                            <div class="q-info"><h4>Abdullah Akram</h4><p>G10 • SEC C</p></div>
-                        </div>
-                        <div class="q-player">
-                            <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png">
-                            <div class="q-info"><h4>Aashir Ali Khan</h4><p>G10 • SEC C</p></div>
-                        </div>
-                        <div class="q-player">
-                            <img src="https://iili.io/qsMIphF.md.png">
-                            <div class="q-info"><h4>Yazan Hassan</h4><p>G9 • SEC D</p></div>
-                        </div>
-                        <div class="q-player">
-                            <img src="https://iili.io/B9EOgyu.md.jpg">
-                            <div class="q-info"><h4>Mujtaba Umer</h4><p>G10 • SEC C</p></div>
-                        </div>
-                        <div class="q-player">
-                            <img src="https://iili.io/qsHfit2.md.png">
-                            <div class="q-info"><h4>Tamim M.</h4><p>G10 • SEC C</p></div>
-                        </div>
-                        <div class="q-player">
-                            <img src="https://iili.io/qs9q7rg.md.png">
-                            <div class="q-info"><h4>Muhammad Rayyan</h4><p>G10 • SEC B</p></div>
-                        </div>
-                        <div class="q-player">
-                            <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png">
-                            <div class="q-info"><h4>Ahmed Tabiyyeh</h4><p>G12 • SEC C</p></div>
-                        </div>
-                        <div class="q-player">
-                            <img src="https://iili.io/qsdFnNR.png">
-                            <div class="q-info"><h4>Abdullah Zubair</h4><p>G10 • SEC B</p></div>
-                        </div>
-                        <div class="q-player">
-                            <img src="https://iili.io/qsMwEYl.png">
-                            <div class="q-info"><h4>Rayyan Adil</h4><p>G12 • SEC B</p></div>
-                        </div>
-                        <div class="q-player">
-                            <img src="https://iili.io/qsMJ3dJ.md.png">
-                            <div class="q-info"><h4>Basel M.</h4><p>G8 • SEC C</p></div>
-                        </div>
-                        <div class="q-player">
-                            <img src="https://iili.io/qsMBtee.md.png">
-                            <div class="q-info"><h4>Ali Al-Bachari</h4><p>G9 • SEC D</p></div>
-                        </div>
+                        <span>Group Stage concluded. All results and tables moved to Previous Matchups.</span>
+                        <span class="news-tag">ARCHIVE</span>
                     </div>
                 </div>
 
@@ -369,7 +267,7 @@
         </div>
 
         <div id="roster" class="view">
-            <h2 style="font-family:'Lexend Deca'; font-size: 2.5rem; margin-bottom: 30px;">Current <span>Players</span> (31/32)</h2>
+            <h2 style="font-family:'Lexend Deca'; font-size: 2.5rem; margin-bottom: 30px;">Current <span>Players</span> (32/32)</h2>
             <div class="roster-grid" id="athleteList">
                 <div class="player-card"><img src="https://iili.io/qi8bjYG.md.jpg"><div><h4>Abdulmajeed Mohieddeen</h4><p>GRADE 10 • SECTION A</p></div></div>
                 <div class="player-card"><img src="https://iili.io/qsdFnNR.png"><div><h4>Abdullah Zubair</h4><p>GRADE 10 • SECTION B</p></div></div>
@@ -407,130 +305,34 @@
         </div>
 
         <div id="matchups" class="view">
-            <h2 style="font-family:'Lexend Deca'; font-size: 2.5rem; margin-bottom: 30px;">Match <span>Schedule</span></h2>
+            <h2 style="font-family:'Lexend Deca'; font-size: 2.5rem; margin-bottom: 30px;">Knockout <span>Fixtures</span></h2>
             
             <div class="matchup-group-section">
-                <h3>Group A Fixtures</h3>
+                <h3>Round of 16</h3>
                 <div class="groups-grid">
-                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qs9q7rg.md.png"> M. Rayyan</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Aashir A. <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> <span class="winner-name">Abdelbagi E.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">A. Bechara <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Flag_of_Lebanon.svg/1280px-Flag_of_Lebanon.svg.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qs9q7rg.md.png"> M. Rayyan</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">A. Bechara</span> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Flag_of_Lebanon.svg/1280px-Flag_of_Lebanon.svg.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> <span class="winner-name">Aashir A.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Abdelbagi E. <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qs9q7rg.md.png"> <span class="winner-name">M. Rayyan</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Abdelbagi E. <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> <span class="winner-name">Aashir A.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">A. Bechara <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Flag_of_Lebanon.svg/1280px-Flag_of_Lebanon.svg.png"></div></div></div>
+                    <div class="matchup"><p class="matchup-title">Match 1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> M. Luqman</div><span class="vs-text">vs</span><div class="player-name-wrapper">Yazan Hassan <img src="https://iili.io/qsMIphF.md.png"></div></div></div>
+                    <div class="matchup"><p class="matchup-title">Match 2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsMwEYl.png"> Rayyan Adil</div><span class="vs-text">vs</span><div class="player-name-wrapper">Ibrahim Abid <img src="https://iili.io/qsJDyBf.th.png"></div></div></div>
+                    <div class="matchup"><p class="matchup-title">Match 3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsMJ3dJ.md.png"> Basel M.</div><span class="vs-text">vs</span><div class="player-name-wrapper">Abdullah Akram <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
+                    <div class="matchup"><p class="matchup-title">Match 4</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/B9EOgyu.md.jpg"> Mujtaba Umer</div><span class="vs-text">vs</span><div class="player-name-wrapper">M. Moaathasim <img src="https://iili.io/B9EZRf9.md.png"></div></div></div>
+                    <div class="matchup"><p class="matchup-title">Match 5</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qs9q7rg.md.png"> M. Rayyan</div><span class="vs-text">vs</span><div class="player-name-wrapper">Ali Al-Bachari <img src="https://iili.io/qsMBtee.md.png"></div></div></div>
+                    <div class="matchup"><p class="matchup-title">Match 6</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsdFnNR.png"> A. Zubair</div><span class="vs-text">vs</span><div class="player-name-wrapper">M. Yahya <img src="https://iili.io/qs9uITu.png"></div></div></div>
+                    <div class="matchup"><p class="matchup-title">Match 7</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsHfit2.md.png"> Tamim M.</div><span class="vs-text">vs</span><div class="player-name-wrapper">Qamar N. <img src="https://iili.io/qsJzJhG.md.png"></div></div></div>
+                    <div class="matchup"><p class="matchup-title">Match 8</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> Aashir A. K.</div><span class="vs-text">vs</span><div class="player-name-wrapper">A. Tabiyyeh <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
                 </div>
             </div>
 
-            <div class="matchup-group-section">
-                <h3>Group B Fixtures</h3>
-                <div class="groups-grid">
-                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/B9EZRf9.md.png"> <span class="winner-name">M. Moaathasim</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">A. Armaghan <img src="https://iili.io/qsGgLq7.md.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> Mahmoud M.</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Ibrahim A.</span> <img src="https://iili.io/qsJDyBf.th.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/B9EZRf9.md.png"> <span class="winner-name">M. Moaathasim</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Mahmoud M. <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsGgLq7.md.png"> A. Armaghan</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Ibrahim A.</span> <img src="https://iili.io/qsJDyBf.th.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/B9EZRf9.md.png"> M. Moaathasim</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Ibrahim A.</span> <img src="https://iili.io/qsJDyBf.th.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsGgLq7.md.png"> <span class="winner-name">A. Armaghan</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Mahmoud M. <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
-                </div>
-            </div>
-
-            <div class="matchup-group-section">
-                <h3>Group C Fixtures</h3>
-                <div class="groups-grid">
-                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qs9uITu.png"> <span class="winner-name">M. Yahya</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Farukh S. <img src="https://iili.io/qsGeaVe.md.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://i.ibb.co/Fq03vccL/hendawy.jpg"> Adam H.</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Qamar N.</span> <img src="https://iili.io/qsJzJhG.md.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qs9uITu.png"> M. Yahya</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Adam H.</span> <img src="https://i.ibb.co/Fq03vccL/hendawy.jpg"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsGeaVe.md.png"> <span class="winner-name">Farukh S.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Qamar N. <img src="https://iili.io/qsJzJhG.md.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qs9uITu.png"> <span class="winner-name">M. Yahya</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Qamar N. <img src="https://iili.io/qsJzJhG.md.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qs9uITu.png"> Farukh S.</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Adam H.</span> <img src="https://i.ibb.co/Fq03vccL/hendawy.jpg"></div></div></div>
-                </div>
-            </div>
-
-            <div class="matchup-group-section">
-                <h3>Group D Fixtures</h3>
-                <div class="groups-grid">
-                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper" style="text-decoration: line-through;"><img src="https://iili.io/qsJMuOG.md.png"> Saif Yazan</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">A. Zubair <img src="https://iili.io/qsdFnNR.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/B9G3r1j.md.png"> Yman M.</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">A. Tabiyyeh</span> <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper" style="text-decoration: line-through;"><img src="https://iili.io/qsJMuOG.md.png"> Saif Yazan</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Yman M. <img src="https://iili.io/B9G3r1j.md.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsdFnNR.png"> A. Zubair</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">A. Tabiyyeh</span> <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper" style="text-decoration: line-through;"><img src="https://iili.io/qsJMuOG.md.png"> Saif Yazan</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">A. Tabiyyeh <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsdFnNR.png"><span class="winner-name">A. Zubair</div><span class="vs-text">vs</span><div class="player-name-wrapper">Yman M. <img src="https://iili.io/B9G3r1j.md.png"></div></div></div>
-                </div>
-            </div>
-
-            <div class="matchup-group-section">
-                <h3>Group E Fixtures</h3>
-                <div class="groups-grid">
-                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsGidua.md.png"> Karam Awad</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Modasser</span> <img src="https://iili.io/qsJaYaj.md.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> <span class="winner-name">M. Luqman</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Ali Al-Bachari <img src="https://iili.io/qsMBtee.md.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsGidua.md.png"> Karam Awad</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">M. Luqman</span> <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsJaYaj.md.png"> Modasser</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Ali Al-Bachari</span> <img src="https://iili.io/qsMBtee.md.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsGidua.md.png"> Karam Awad</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Ali Al-Bachari</span> <img src="https://iili.io/qsMBtee.md.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsJaYaj.md.png"> <span class="winner-name">Modasser</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">M. Luqman <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
-                </div>
-            </div>
-
-            <div class="matchup-group-section">
-                <h3>Group F Fixtures</h3>
-                <div class="groups-grid">
-                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsMJ3dJ.md.png"> <span class="winner-name">Basel M.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Hasnain M. <img src="https://iili.io/qsVMqMv.th.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsMwEYl.png">Rayyan Adil</span></div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Ramez A. <img src="https://iili.io/qsMVE6Q.md.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsMJ3dJ.md.png"> Basel M.</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Rayyan Adil</span> <img src="https://iili.io/qsMwEYl.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsVMqMv.th.png"> Hasnain M.</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Ramez A. <img src="https://iili.io/qsMVE6Q.md.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsMJ3dJ.md.png"><span class="winner-name">Basel M.</div><span class="vs-text">vs</span><div class="player-name-wrapper">Ramez A. <img src="https://iili.io/qsMVE6Q.md.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsVMqMv.th.png"> Hasnain M.</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Rayyan Adil</span> <img src="https://iili.io/qsMwEYl.png"></div></div></div>
-                </div>
-            </div>
-
-            <div class="matchup-group-section">
-                <h3>Group G Fixtures</h3>
-                <div class="groups-grid">
-                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> <span class="winner-name">Abdullah A.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Yazan H. <img src="https://iili.io/qsMIphF.md.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> <span class="winner-name">Abdullah A.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Abdulmajeed <img src="https://iili.io/qi8bjYG.md.jpg"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">BYE</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsMIphF.md.png"> Yazan H.</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span style="text-decoration: line-through;">Hazem E.</span> <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">BYE</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qi8bjYG.md.jpg"> Abdulmajeed</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span style="text-decoration: line-through;">Hazem E.</span> <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">BYE</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> Abdullah A.</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span style="text-decoration: line-through;">Hazem E.</span> <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qi8bjYG.md.jpg"> Abdulmajeed</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Yazan H.</span> <img src="https://iili.io/qsMIphF.md.png"></div></div></div>
-                </div>
-            </div>
-
-            <div class="matchup-group-section">
-                <h3>Group H Fixtures</h3>
-                <div class="groups-grid">
-                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/B9EOgyu.md.jpg"> <span class="winner-name">Mujtaba U.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Anas M. <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsHfit2.md.png"> <span class="winner-name">Tamim M.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Bilal Amir <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/B9EOgyu.md.jpg"> <span class="winner-name">Mujtaba U.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Tamim M. <img src="https://iili.io/qsHfit2.md.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> <span class="winner-name">Anas M.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Bilal Amir <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/B9EOgyu.md.jpg"> <span class="winner-name">Mujtaba U.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Bilal Amir <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
-                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> Anas M.</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Tamim M.</span> <img src="https://iili.io/qsHfit2.md.png"></div></div></div>
-                </div>
-            </div>
-        </div>
-
-        <div id="groups" class="view">
-            <h2 style="font-family:'Lexend Deca'; font-size: 2.5rem; margin-bottom: 20px;">Group <span>Standings</span></h2>
-            <div class="groups-grid">
-                <div class="group-card"><h3>Group A</h3><span class="qualify-note">TOP 2 QUALIFY</span><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>W</th><th>L</th><th>PTS</th></tr></thead><tr class="qualified-row"><td>1</td><td>Aashir A.</td><td>3</td><td>3</td><td>0</td><td>9</td></tr><tr class="qualified-row"><td>2</td><td>A. Bechara</td><td>3</td><td>1</td><td>2</td><td>3</td></tr><tr><td>3</td><td>M. Rayyan</td><td>3</td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>Abdelbagi E.</td><td>3</td><td>1</td><td>2</td><td>3</td></tr></table></div>
-                <div class="group-card"><h3>Group B</h3><span class="qualify-note">TOP 2 QUALIFY</span><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>W</th><th>L</th><th>PTS</th></tr></thead><tr class="qualified-row"><td>1</td><td>Ibrahim A.</td><td>3</td><td>3</td><td>0</td><td>9</td></tr><tr class="qualified-row"><td>2</td><td>M. Moaathasim</td><td>3</td><td>2</td><td>1</td><td>6</td></tr><tr><td>3</td><td>A. Armaghan</td><td>3</td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>Mahmoud M.</td><td>3</td><td>0</td><td>3</td><td>0</td></tr></table></div>
-                <div class="group-card"><h3>Group C</h3><span class="qualify-note">TOP 2 QUALIFY</span><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>W</th><th>L</th><th>PTS</th></tr></thead><tr class="qualified-row"><td>1</td><td>M. Yahya</td><td>3</td><td>2</td><td>1</td><td>6</td></tr><tr class="qualified-row"><td>2</td><td>Qamar N.</td><td>3</td><td>2</td><td>1</td><td>6</td></tr><tr><td>3</td><td>Adam H.</td><td>3</td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>Farukh S.</td><td>3</td><td>1</td><td>2</td><td>3</td></tr></table></div>
-                <div class="group-card"><h3>Group D</h3><span class="qualify-note">TOP 2 QUALIFY</span><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>W</th><th>L</th><th>PTS</th></tr></thead><tr class="qualified-row"><td>1</td><td>A. Tabiyyeh</td><td>3</td><td>3</td><td>0</td><td>9</td></tr><tr class="qualified-row"><td>2</td><td>Abdullah Z.</td><td>3</td><td>2</td><td>1</td><td>6</td></tr><tr><td>3</td><td>Yman M.</td><td>3</td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>Saif Yazan</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></table></div>
-                <div class="group-card"><h3>Group E</h3><span class="qualify-note">TOP 2 QUALIFY</span><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>W</th><th>L</th><th>PTS</th></tr></thead><tr class="qualified-row"><td>1</td><td>M. Luqman</td><td>3</td><td>2</td><td>1</td><td>6</td></tr><tr class="qualified-row"><td>2</td><td>Ali Al-Bachari</td><td>3</td><td>2</td><td>1</td><td>6</td></tr><tr><td>3</td><td>Modasser</td><td>3</td><td>2</td><td>1</td><td>6</td></tr><tr><td>4</td><td>Karam Awad</td><td>3</td><td>0</td><td>3</td><td>0</td></tr></table></div>
-		<div class="group-card"><h3>Group F</h3><span class="qualify-note">TOP 2 QUALIFY</span><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>W</th><th>L</th><th>PTS</th></tr></thead><tr class="qualified-row"><td>1</td><td>Rayyan Adil</td><td>3</td><td>2</td><td>1</td><td>6</td></tr><tr class="qualified-row"><td>2</td><td>Basel M.</td><td>3</td><td>2</td><td>1</td><td>6</td></tr><tr><td>3</td><td>Ramez A.</td><td>3</td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>Hasnain M.</td><td>3</td><td>1</td><td>2</td><td>3</td></tr></table></div>
-                <div class="group-card"><h3>Group G</h3><span class="qualify-note">TOP 2 QUALIFY</span><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>W</th><th>L</th><th>PTS</th></tr></thead><tr class="qualified-row"><td>1</td><td>Abdullah A.</td><td>3</td><td>3</td><td>0</td><td>9</td></tr><tr class="qualified-row"><td>2</td><td>Yazan H.</td><td>3</td><td>2</td><td>1</td><td>6</td></tr><tr><td>3</td><td>Abdulmajeed</td><td>3</td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>Hazem E.</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></table></div>
-                <div class="group-card"><h3>Group H</h3><span class="qualify-note">TOP 2 QUALIFY</span><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>W</th><th>L</th><th>PTS</th></tr></thead><tr class="qualified-row"><td>1</td><td>Mujtaba U.</td><td>3</td><td>3</td><td>0</td><td>9</td></tr><tr class="qualified-row"><td>2</td><td>Tamim M.</td><td>3</td><td>2</td><td>1</td><td>6</td></tr><tr><td>3</td><td>Anas M.</td><td>3</td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>Bilal Amir</td><td>3</td><td>0</td><td>3</td><td>0</td></tr></table></div>
-            </div>
-
-            <h2 style="font-family:'Lexend Deca'; font-size: 2.5rem; margin: 60px 0 20px;">Knockout <span>Phase</span></h2>
+            <h2 style="font-family:'Lexend Deca'; font-size: 2.5rem; margin: 60px 0 20px;">Path To <span>Final</span></h2>
             <div class="bracket-container">
                 <div class="round">
                     <p style="font-weight: 800; color: var(--accent);">Round of 16</p>
-                    <div class="matchup"><div class="player-slot">Winner A</div><div class="player-slot">Runner-up B</div></div>
-                    <div class="matchup"><div class="player-slot">Winner C</div><div class="player-slot">Runner-up D</div></div>
-                    <div class="matchup"><div class="player-slot">Winner E</div><div class="player-slot">Runner-up F</div></div>
-                    <div class="matchup"><div class="player-slot">Winner G</div><div class="player-slot">Runner-up H</div></div>
-                    <div class="matchup"><div class="player-slot">Winner B</div><div class="player-slot">Runner-up A</div></div>
-                    <div class="matchup"><div class="player-slot">Winner D</div><div class="player-slot">Runner-up C</div></div>
-                    <div class="matchup"><div class="player-slot">Winner F</div><div class="player-slot">Runner-up E</div></div>
-                    <div class="matchup"><div class="player-slot">Winner H</div><div class="player-slot">Runner-up G</div></div>
+                    <div class="matchup"><div class="player-slot">M. Luqman</div><div class="player-slot">Yazan Hassan</div></div>
+                    <div class="matchup"><div class="player-slot">Rayyan Adil</div><div class="player-slot">Ibrahim Abid</div></div>
+                    <div class="matchup"><div class="player-slot">Basel M.</div><div class="player-slot">Abdullah Akram</div></div>
+                    <div class="matchup"><div class="player-slot">Mujtaba Umer</div><div class="player-slot">M. Moaathasim</div></div>
+                    <div class="matchup"><div class="player-slot">M. Rayyan</div><div class="player-slot">Ali Al-Bachari</div></div>
+                    <div class="matchup"><div class="player-slot">A. Zubair</div><div class="player-slot">M. Yahya</div></div>
+                    <div class="matchup"><div class="player-slot">Tamim M.</div><div class="player-slot">Qamar N.</div></div>
+                    <div class="matchup"><div class="player-slot">Aashir A. K.</div><div class="player-slot">A. Tabiyyeh</div></div>
                 </div>
                 <div class="round" style="justify-content: space-around;">
                     <p style="font-weight: 800; color: var(--accent);">Quarter Finals</p>
@@ -557,17 +359,80 @@
             </div>
         </div>
 
-        <div id="gallery" class="view">
-            <h2 style="font-family:'Lexend Deca'; font-size: 2.5rem; margin-bottom: 30px;">Media <span>Gallery</span></h2>
+        <div id="groups" class="view">
+            <h2 style="font-family:'Lexend Deca'; font-size: 2.5rem; margin-bottom: 20px;">Previous <span>Matchups</span></h2>
+            
             <div class="groups-grid">
-                <div class="group-card" style="height: 200px;"><img src="https://images.unsplash.com/photo-1628766113143-698188285511?auto=format&fit=crop&q=80&w=800" style="width:100%; height:100%; object-fit:cover; border-radius:12px;"></div>
-                <div class="group-card" style="height: 200px;"><img src="https://images.unsplash.com/photo-1544198365-f5d60b6d8190?auto=format&fit=crop&q=80&w=800" style="width:100%; height:100%; object-fit:cover; border-radius:12px;"></div>
+                <div class="group-card"><h3>Group A</h3><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>PTS</th></tr></thead><tr class="qualified-row"><td>1</td><td>Aashir A.</td><td>3</td><td>9</td></tr><tr class="qualified-row"><td>2</td><td>A. Bechara</td><td>3</td><td>3</td></tr><tr><td>3</td><td>M. Rayyan</td><td>3</td><td>3</td></tr><tr><td>4</td><td>Abdelbagi E.</td><td>3</td><td>3</td></tr></table></div>
+                <div class="group-card"><h3>Group B</h3><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>PTS</th></tr></thead><tr class="qualified-row"><td>1</td><td>Ibrahim A.</td><td>3</td><td>9</td></tr><tr class="qualified-row"><td>2</td><td>M. Moaathasim</td><td>3</td><td>6</td></tr><tr><td>3</td><td>A. Armaghan</td><td>3</td><td>3</td></tr><tr><td>4</td><td>Mahmoud M.</td><td>3</td><td>0</td></tr></table></div>
+                <div class="group-card"><h3>Group C</h3><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>PTS</th></tr></thead><tr class="qualified-row"><td>1</td><td>M. Yahya</td><td>3</td><td>6</td></tr><tr class="qualified-row"><td>2</td><td>Qamar N.</td><td>3</td><td>6</td></tr><tr><td>3</td><td>Adam H.</td><td>3</td><td>3</td></tr><tr><td>4</td><td>Farukh S.</td><td>3</td><td>3</td></tr></table></div>
+                <div class="group-card"><h3>Group D</h3><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>PTS</th></tr></thead><tr class="qualified-row"><td>1</td><td>A. Tabiyyeh</td><td>3</td><td>9</td></tr><tr class="qualified-row"><td>2</td><td>Abdullah Z.</td><td>3</td><td>6</td></tr><tr><td>3</td><td>Yman M.</td><td>3</td><td>3</td></tr><tr><td>4</td><td>Saif Yazan</td><td>0</td><td>0</td></tr></table></div>
+                <div class="group-card"><h3>Group E</h3><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>PTS</th></tr></thead><tr class="qualified-row"><td>1</td><td>M. Luqman</td><td>3</td><td>6</td></tr><tr class="qualified-row"><td>2</td><td>Ali Al-Bachari</td><td>3</td><td>6</td></tr><tr><td>3</td><td>Modasser</td><td>3</td><td>6</td></tr><tr><td>4</td><td>Karam Awad</td><td>3</td><td>0</td></tr></table></div>
+                <div class="group-card"><h3>Group F</h3><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>PTS</th></tr></thead><tr class="qualified-row"><td>1</td><td>Rayyan Adil</td><td>3</td><td>6</td></tr><tr class="qualified-row"><td>2</td><td>Basel M.</td><td>3</td><td>6</td></tr><tr><td>3</td><td>Ramez A.</td><td>3</td><td>3</td></tr><tr><td>4</td><td>Hasnain M.</td><td>3</td><td>3</td></tr></table></div>
+                <div class="group-card"><h3>Group G</h3><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>PTS</th></tr></thead><tr class="qualified-row"><td>1</td><td>Abdullah A.</td><td>3</td><td>9</td></tr><tr class="qualified-row"><td>2</td><td>Yazan H.</td><td>3</td><td>6</td></tr><tr><td>3</td><td>Abdulmajeed</td><td>3</td><td>3</td></tr><tr><td>4</td><td>Hazem E.</td><td>0</td><td>0</td></tr></table></div>
+                <div class="group-card"><h3>Group H</h3><table class="group-table"><thead><tr><th>#</th><th>Player</th><th>P</th><th>PTS</th></tr></thead><tr class="qualified-row"><td>1</td><td>Mujtaba U.</td><td>3</td><td>9</td></tr><tr class="qualified-row"><td>2</td><td>Tamim M.</td><td>3</td><td>6</td></tr><tr><td>3</td><td>Anas M.</td><td>3</td><td>3</td></tr><tr><td>4</td><td>Bilal Amir</td><td>3</td><td>0</td></tr></table></div>
+            </div>
+
+            <br><hr style="border: 0.5px solid var(--glass-border); margin: 40px 0;"><br>
+
+            <div class="matchup-group-section">
+                <h3>Group A - H Historical Fixtures</h3>
+                <div class="groups-grid">
+                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qs9q7rg.md.png"> M. Rayyan</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Aashir A. <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> <span class="winner-name">Abdelbagi E.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">A. Bechara <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Flag_of_Lebanon.svg/1280px-Flag_of_Lebanon.svg.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qs9q7rg.md.png"> M. Rayyan</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">A. Bechara</span> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Flag_of_Lebanon.svg/1280px-Flag_of_Lebanon.svg.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> <span class="winner-name">Aashir A.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Abdelbagi E. <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qs9q7rg.md.png"> <span class="winner-name">M. Rayyan</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Abdelbagi E. <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> <span class="winner-name">Aashir A.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">A. Bechara <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Flag_of_Lebanon.svg/1280px-Flag_of_Lebanon.svg.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/B9EZRf9.md.png"> <span class="winner-name">M. Moaathasim</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">A. Armaghan <img src="https://iili.io/qsGgLq7.md.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> Mahmoud M.</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Ibrahim A.</span> <img src="https://iili.io/qsJDyBf.th.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/B9EZRf9.md.png"> <span class="winner-name">M. Moaathasim</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Mahmoud M. <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsGgLq7.md.png"> A. Armaghan</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Ibrahim A.</span> <img src="https://iili.io/qsJDyBf.th.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/B9EZRf9.md.png"> M. Moaathasim</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Ibrahim A.</span> <img src="https://iili.io/qsJDyBf.th.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsGgLq7.md.png"> <span class="winner-name">A. Armaghan</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Mahmoud M. <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qs9uITu.png"> <span class="winner-name">M. Yahya</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Farukh S. <img src="https://iili.io/qsGeaVe.md.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://i.ibb.co/Fq03vccL/hendawy.jpg"> Adam H.</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Qamar N.</span> <img src="https://iili.io/qsJzJhG.md.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qs9uITu.png"> M. Yahya</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Adam H.</span> <img src="https://i.ibb.co/Fq03vccL/hendawy.jpg"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsGeaVe.md.png"> <span class="winner-name">Farukh S.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Qamar N. <img src="https://iili.io/qsJzJhG.md.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qs9uITu.png"> <span class="winner-name">M. Yahya</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Qamar N. <img src="https://iili.io/qsJzJhG.md.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qs9uITu.png"> Farukh S.</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Adam H.</span> <img src="https://i.ibb.co/Fq03vccL/hendawy.jpg"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper" style="text-decoration: line-through;"><img src="https://iili.io/qsJMuOG.md.png"> Saif Yazan</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">A. Zubair <img src="https://iili.io/qsdFnNR.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/B9G3r1j.md.png"> Yman M.</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">A. Tabiyyeh</span> <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper" style="text-decoration: line-through;"><img src="https://iili.io/qsJMuOG.md.png"> Saif Yazan</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Yman M. <img src="https://iili.io/B9G3r1j.md.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsdFnNR.png"> A. Zubair</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">A. Tabiyyeh</span> <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper" style="text-decoration: line-through;"><img src="https://iili.io/qsJMuOG.md.png"> Saif Yazan</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">A. Tabiyyeh <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsdFnNR.png"><span class="winner-name">A. Zubair</div><span class="vs-text">vs</span><div class="player-name-wrapper">Yman M. <img src="https://iili.io/B9G3r1j.md.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsGidua.md.png"> Karam Awad</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Modasser</span> <img src="https://iili.io/qsJaYaj.md.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> <span class="winner-name">M. Luqman</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Ali Al-Bachari <img src="https://iili.io/qsMBtee.md.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsGidua.md.png"> Karam Awad</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">M. Luqman</span> <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsJaYaj.md.png"> Modasser</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Ali Al-Bachari</span> <img src="https://iili.io/qsMBtee.md.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsGidua.md.png"> Karam Awad</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Ali Al-Bachari</span> <img src="https://iili.io/qsMBtee.md.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsJaYaj.md.png"> <span class="winner-name">Modasser</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">M. Luqman <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsMJ3dJ.md.png"> <span class="winner-name">Basel M.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Hasnain M. <img src="https://iili.io/qsVMqMv.th.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsMwEYl.png">Rayyan Adil</span></div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Ramez A. <img src="https://iili.io/qsMVE6Q.md.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsMJ3dJ.md.png"> Basel M.</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Rayyan Adil</span> <img src="https://iili.io/qsMwEYl.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsVMqMv.th.png"> Hasnain M.</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Ramez A. <img src="https://iili.io/qsMVE6Q.md.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsMJ3dJ.md.png"><span class="winner-name">Basel M.</div><span class="vs-text">vs</span><div class="player-name-wrapper">Ramez A. <img src="https://iili.io/qsMVE6Q.md.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsVMqMv.th.png"> Hasnain M.</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Rayyan Adil</span> <img src="https://iili.io/qsMwEYl.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> <span class="winner-name">Abdullah A.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Yazan H. <img src="https://iili.io/qsMIphF.md.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> <span class="winner-name">Abdullah A.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Abdulmajeed <img src="https://iili.io/qi8bjYG.md.jpg"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">BYE</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsMIphF.md.png"> Yazan H.</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span style="text-decoration: line-through;">Hazem E.</span> <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">BYE</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qi8bjYG.md.jpg"> Abdulmajeed</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span style="text-decoration: line-through;">Hazem E.</span> <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">BYE</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> Abdullah A.</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span style="text-decoration: line-through;">Hazem E.</span> <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qi8bjYG.md.jpg"> Abdulmajeed</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Yazan H.</span> <img src="https://iili.io/qsMIphF.md.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/B9EOgyu.md.jpg"> <span class="winner-name">Mujtaba U.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Anas M. <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R1</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/qsHfit2.md.png"> <span class="winner-name">Tamim M.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Bilal Amir <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/B9EOgyu.md.jpg"> <span class="winner-name">Mujtaba U.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Tamim M. <img src="https://iili.io/qsHfit2.md.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R2</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> <span class="winner-name">Anas M.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Bilal Amir <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://iili.io/B9EOgyu.md.jpg"> <span class="winner-name">Mujtaba U.</span></div><span class="vs-text">vs</span><div class="player-name-wrapper">Bilal Amir <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"></div></div></div>
+                    <div class="matchup completed"><p class="matchup-title">R3</p><div class="player-slot"><div class="player-name-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png"> Anas M.</div><span class="vs-text">vs</span><div class="player-name-wrapper"><span class="winner-name">Tamim M.</span> <img src="https://iili.io/qsHfit2.md.png"></div></div></div>
+                </div>
             </div>
         </div>
 
     </div>
 
-    <a href="https://wa.me/966502209810" class="wa-btn" target="_blank">
+    <a href="https://chat.whatsapp.com/KP7ZUkB8mLT7pFc0R27FOJ" class="wa-btn" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
